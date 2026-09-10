@@ -33,16 +33,17 @@
             this.txtMotSecret = new System.Windows.Forms.TextBox();
             this.grpTest = new System.Windows.Forms.GroupBox();
             this.grpSecret = new System.Windows.Forms.GroupBox();
+            this.lblResultat = new System.Windows.Forms.Label();
+            this.lblChoixMot = new System.Windows.Forms.Label();
             this.pctPendu = new System.Windows.Forms.PictureBox();
             this.btnRejouer = new System.Windows.Forms.Button();
-            this.lblResultat = new System.Windows.Forms.Label();
             this.grpSecret.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctPendu)).BeginInit();
             this.SuspendLayout();
             // 
             // txtMot
             // 
-            this.txtMot.Location = new System.Drawing.Point(358, 153);
+            this.txtMot.Location = new System.Drawing.Point(342, 153);
             this.txtMot.Name = "txtMot";
             this.txtMot.Size = new System.Drawing.Size(100, 20);
             this.txtMot.TabIndex = 5;
@@ -91,6 +92,25 @@
             this.grpSecret.Text = "Mot à chercher";
             this.grpSecret.Visible = false;
             // 
+            // lblResultat
+            // 
+            this.lblResultat.AutoSize = true;
+            this.lblResultat.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultat.Location = new System.Drawing.Point(332, 79);
+            this.lblResultat.Name = "lblResultat";
+            this.lblResultat.Size = new System.Drawing.Size(0, 55);
+            this.lblResultat.TabIndex = 10;
+            this.lblResultat.Visible = false;
+            // 
+            // lblChoixMot
+            // 
+            this.lblChoixMot.AutoSize = true;
+            this.lblChoixMot.Location = new System.Drawing.Point(330, 112);
+            this.lblChoixMot.Name = "lblChoixMot";
+            this.lblChoixMot.Size = new System.Drawing.Size(128, 13);
+            this.lblChoixMot.TabIndex = 11;
+            this.lblChoixMot.Text = "Choisis un mot à deviner :";
+            // 
             // pctPendu
             // 
             this.pctPendu.Image = global::JeuDuPendu.Properties.Resources.pendu0;
@@ -104,7 +124,7 @@
             // btnRejouer
             // 
             this.btnRejouer.Image = global::JeuDuPendu.Properties.Resources.playagain;
-            this.btnRejouer.Location = new System.Drawing.Point(358, 199);
+            this.btnRejouer.Location = new System.Drawing.Point(365, 179);
             this.btnRejouer.Name = "btnRejouer";
             this.btnRejouer.Size = new System.Drawing.Size(59, 56);
             this.btnRejouer.TabIndex = 1;
@@ -112,21 +132,12 @@
             this.btnRejouer.Visible = false;
             this.btnRejouer.Click += new System.EventHandler(this.btnRejouer_Click);
             // 
-            // lblResultat
-            // 
-            this.lblResultat.AutoSize = true;
-            this.lblResultat.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResultat.Location = new System.Drawing.Point(332, 79);
-            this.lblResultat.Name = "lblResultat";
-            this.lblResultat.Size = new System.Drawing.Size(0, 55);
-            this.lblResultat.TabIndex = 10;
-            this.lblResultat.Visible = false;
-            // 
             // FenetrePendu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(786, 409);
+            this.Controls.Add(this.lblChoixMot);
             this.Controls.Add(this.lblResultat);
             this.Controls.Add(this.grpSecret);
             this.Controls.Add(this.grpTest);
@@ -155,6 +166,7 @@
         private System.Windows.Forms.GroupBox grpTest;
         private System.Windows.Forms.GroupBox grpSecret;
         private System.Windows.Forms.Label lblResultat;
+        private System.Windows.Forms.Label lblChoixMot;
     }
 }
 

@@ -59,7 +59,7 @@ namespace JeuDuPendu
             if (!trouve)
             {
                 nbEchec++;
-                pctPendu.Image = Image.FromFile("JeuDuPendu/Resources/pendu" + nbEchec + ".png");
+                pctPendu.Image = Image.FromFile("./Resources/pendu" + nbEchec + ".png");
                 if (nbEchec == 7)
                 {
                     grpTest.Enabled = false;
@@ -101,6 +101,7 @@ namespace JeuDuPendu
                     else
                     {
                         txtMot.Visible = false;
+                        lblChoixMot.Visible = false;
                         btnRejouer.Visible = true;
                         pctPendu.Visible = true;
                         txtMotSecret.Visible = true;
@@ -129,13 +130,14 @@ namespace JeuDuPendu
             pctPendu.Visible = false;
             txtMotSecret.Visible = false;
             txtMot.Visible = true;
+            lblChoixMot.Visible = true;
             grpSecret.Visible = false;
             grpTest.Visible = false;
             grpTest.Controls.Clear();
             txtMot.Clear();
             txtMotSecret.Clear();
             lblResultat.Text = "";
-            pctPendu.Image = Image.FromFile("pendu0.png");
+            pctPendu.Image = Image.FromFile("./Resources/pendu0.png");
             FenetrePendu_Load(null, null);
         }
     }
