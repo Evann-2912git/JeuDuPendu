@@ -65,7 +65,7 @@ namespace JeuDuPendu
                     grpTest.Enabled = false;
                     lblResultat.Visible = true;
                     lblResultat.Text = "Perdu!";
-                    lblResultat.ForeColor = Color.Red;
+                    lblResultat.ForeColor = Color.Red; 
                 }
             }
             if (lettresTrouvees == longueurMot)
